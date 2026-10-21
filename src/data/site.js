@@ -55,7 +55,7 @@ export const services = [
     icon: FaBedPulse,
     title: 'Movilización y cambios de posición',
     summary:
-      'Técnicas seguras de movilización para prevenir lesiones y cuidar la piel de quien permanece en cama.',
+      'Técnicas seguras de movilización para prevenir lesiones y cuidado de la piel de quien permanece en cama.',
     points: [
       'Cambios de posición programados',
       'Apoyo en desplazamientos dentro del hogar',

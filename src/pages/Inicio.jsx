@@ -78,7 +78,7 @@ export default function Inicio() {
             <Reveal>
               <span className="pill">
                 <FaLeaf aria-hidden="true" />
-                Droguería y cuidado domiciliario · Bogotá
+                Enfermería domiciliaria y/o hospitalaria · Bogotá y sus alrededores
               </span>
             </Reveal>
             <Reveal delay={0.08}>
