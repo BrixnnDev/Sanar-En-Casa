@@ -88,13 +88,13 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
+          <p>© {year} Sanar en Casa. Todos los derechos reservados.</p>
           <p>
-            © {year} Sanar en Casa. Todos los derechos reservados. Creado por{' '}
+            Creado por{' '}
             <a href="https://brixnndev.vercel.app/" target="_blank" rel="noreferrer">
               BRIXNNDEV
             </a>
           </p>
-          <p>Hecho con cuidado en Bogotá</p>
         </div>
       </div>
     </footer>
