@@ -73,6 +73,14 @@ export default function Inicio() {
   return (
     <>
       <section className="hero">
+        <img
+          className="hero__fondo"
+          src="/Img/FONDO.jpg"
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          decoding="async"
+        />
         <div className="container hero__inner">
           <div className="hero__copy">
             <Reveal>
