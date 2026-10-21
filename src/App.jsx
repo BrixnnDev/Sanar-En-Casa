@@ -8,6 +8,7 @@ import Servicios from './pages/Servicios.jsx'
 import TalentoHumano from './pages/TalentoHumano.jsx'
 import Pqr from './pages/Pqr.jsx'
 import Privacidad from './pages/Privacidad.jsx'
+import Terminos from './pages/Terminos.jsx'
 import Contacto from './pages/Contacto.jsx'
 import NotFound from './pages/NotFound.jsx'
 
@@ -33,6 +34,7 @@ export default function App() {
             <Route path="/talento-humano" element={<TalentoHumano />} />
             <Route path="/pqr" element={<Pqr />} />
             <Route path="/privacidad" element={<Privacidad />} />
+            <Route path="/terminos" element={<Terminos />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

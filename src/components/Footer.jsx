@@ -9,17 +9,14 @@ import {
 import Logo from './Logo.jsx'
 import { contact } from '../data/site.js'
 
-const quickLinks = [
-  { to: '/nosotros', label: 'Nosotros' },
-  { to: '/confianza', label: 'Confianza' },
-  { to: '/servicios', label: 'Servicios' },
-  { to: '/talento-humano', label: 'Talento humano' },
-]
-
 const supportLinks = [
   { to: '/pqr', label: 'PQR' },
-  { to: '/privacidad', label: 'Política de privacidad' },
   { to: '/contacto', label: 'Contacto' },
+]
+
+const legalLinks = [
+  { to: '/terminos', label: 'Términos y condiciones' },
+  { to: '/privacidad', label: 'Política de privacidad' },
 ]
 
 export default function Footer() {
@@ -46,12 +43,9 @@ export default function Footer() {
           </div>
 
           <div className="footer">
-            <h4>Explora</h4>
+            <h4>Legal</h4>
             <ul className="footer__links">
-              <li>
-                <Link to="/">Inicio</Link>
-              </li>
-              {quickLinks.map((link) => (
+              {legalLinks.map((link) => (
                 <li key={link.to}>
                   <Link to={link.to}>{link.label}</Link>
                 </li>
@@ -94,11 +88,13 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <p>© {year} Sanar en Casa. Todos los derechos reservados.</p>
           <p>
-            Hecho con cuidado en Bogotá ·{' '}
-            <Link to="/privacidad">Política de privacidad</Link>
+            © {year} Sanar en Casa. Todos los derechos reservados. Creado por{' '}
+            <a href="https://brixnndev.vercel.app/" target="_blank" rel="noreferrer">
+              BRIXNNDEV
+            </a>
           </p>
+          <p>Hecho con cuidado en Bogotá</p>
         </div>
       </div>
     </footer>

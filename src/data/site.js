@@ -24,7 +24,6 @@ export const navLinks = [
   { to: '/servicios', label: 'Servicios' },
   { to: '/talento-humano', label: 'Talento humano' },
   { to: '/pqr', label: 'PQR' },
-  { to: '/privacidad', label: 'Privacidad' },
   { to: '/contacto', label: 'Contacto' },
 ]
 
