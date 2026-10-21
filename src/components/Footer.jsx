@@ -32,8 +32,8 @@ export default function Footer() {
           <div className="footer__brand">
             <Logo footer />
             <p className="footer__desc">
-              Droguería y cuidado domiciliario en Bogotá. Acompañamos a pacientes y familias con
-              calidez, responsabilidad y respeto.
+              Enfermería domiciliaria y/o hospitalaria en Bogotá. Acompañamos a pacientes y familias
+              con calidez, responsabilidad y respeto.
             </p>
             <div className="footer__social">
               <a href={contact.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp">

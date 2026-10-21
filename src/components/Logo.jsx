@@ -59,7 +59,7 @@ export default function Logo({ footer = false }) {
       </span>
       <span className="brand__text">
         <strong>Sanar en Casa</strong>
-        <small>Enfermería domiciliaria</small>
+        <small>{footer ? 'Enfermería domiciliaria y/o hospitalaria' : 'Enfermería domiciliaria'}</small>
       </span>
     </Link>
   )
