@@ -11,7 +11,7 @@ export const contact = {
   phone: '+57 300 123 4567',
   phoneHref: 'tel:+573001234567',
   whatsapp: 'https://wa.me/573001234567',
-  email: 'contacto@sanarencasa.com',
+  email: 'sanarencasa51@gmail.com',
   address: 'Bogotá D.C., Colombia',
   hours: 'Lunes a sábado · 7:00 a.m. a 7:00 p.m.',
   schedule: 'Atención coordinada con anticipación',
