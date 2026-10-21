@@ -8,9 +8,9 @@ import {
 } from 'react-icons/fa6'
 
 export const contact = {
-  phone: '+57 300 123 4567',
-  phoneHref: 'tel:+573001234567',
-  whatsapp: 'https://wa.me/573001234567',
+  phone: '+57 300 189 4746',
+  phoneHref: 'tel:+573001894746',
+  whatsapp: 'https://wa.me/573001894746',
   email: 'sanarencasa51@gmail.com',
   address: 'Bogotá D.C., Colombia',
   hours: 'Lunes a sábado · 7:00 a.m. a 7:00 p.m.',
