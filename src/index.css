@@ -1900,17 +1900,11 @@ button {
   background: linear-gradient(160deg, var(--verde-50), #fff 50%, var(--azul-50));
 }
 
-.notfound__icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 20px;
-  display: grid;
-  place-items: center;
-  margin: 0 auto 1rem;
-  background: var(--verde-100);
-  color: var(--verde-700);
-  font-size: 1.7rem;
-  border: 1px solid var(--verde-200);
+.notfound__logo {
+  width: clamp(180px, 32vw, 320px);
+  height: clamp(146px, 26vw, 260px);
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 18px 34px rgba(53, 122, 76, 0.2));
 }
 
 .notfound strong {
