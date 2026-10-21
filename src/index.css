@@ -344,29 +344,16 @@ button {
 }
 
 .brand__mark {
-  position: relative;
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--verde-500), var(--verde-700));
-  color: #fff;
-  font-size: 1.35rem;
-  box-shadow: 0 8px 18px rgba(53, 122, 76, 0.28);
+  width: 58px;
+  height: 47px;
   flex-shrink: 0;
 }
 
-.brand__mark::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  right: -3px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--dorado-300);
-  border: 2px solid #fff;
+.brand__mark svg {
+  width: 100%;
+  height: 100%;
 }
 
 .brand__text {
@@ -1787,15 +1774,6 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__brand .brand__mark {
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: none;
-}
-
-.footer__brand .brand__mark::after {
-  border-color: #2c6240;
-}
-
 .footer__desc {
   margin-top: 1rem;
   font-size: 0.87rem;
@@ -2083,9 +2061,8 @@ button {
   }
 
   .brand__mark {
-    width: 42px;
-    height: 42px;
-    font-size: 1.2rem;
+    width: 48px;
+    height: 39px;
   }
 
   .brand__text strong {
