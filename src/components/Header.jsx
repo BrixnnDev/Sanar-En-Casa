@@ -29,9 +29,7 @@ export default function Header() {
   }, [open])
 
   return (
-    <header
-      className={`site-header${scrolled ? ' is-scrolled' : ''}${pathname === '/' ? ' site-header--over-hero' : ''}`}
-    >
+    <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
       <div className="container header__inner">
         <Logo />
 

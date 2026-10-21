@@ -328,12 +328,6 @@ button {
   box-shadow: 0 8px 30px rgba(34, 49, 42, 0.06);
 }
 
-.site-header--over-hero:not(.is-scrolled) {
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
 .header__inner {
   display: flex;
   align-items: center;
@@ -439,9 +433,7 @@ button {
   position: relative;
   overflow: hidden;
   background: linear-gradient(160deg, var(--verde-50) 0%, #fff 45%, var(--azul-50) 100%);
-  margin-top: -78px;
   padding: clamp(3rem, 6vw, 5.5rem) 0 clamp(4.5rem, 9vw, 7.5rem);
-  padding-top: calc(clamp(3rem, 6vw, 5.5rem) + 78px);
 }
 
 .hero__fondo {
@@ -451,7 +443,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right center;
+  object-position: right top;
   pointer-events: none;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.22) 58%, rgba(0, 0, 0, 0.72) 76%, #000 92%), linear-gradient(to bottom, #000 0%, #000 60%, rgba(0, 0, 0, 0.45) 86%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.22) 58%, rgba(0, 0, 0, 0.72) 76%, #000 92%), linear-gradient(to bottom, #000 0%, #000 60%, rgba(0, 0, 0, 0.45) 86%, transparent 100%);
@@ -2083,11 +2075,6 @@ button {
 
   .header__inner {
     height: 70px;
-  }
-
-  .hero {
-    margin-top: -70px;
-    padding-top: calc(clamp(3rem, 6vw, 5.5rem) + 70px);
   }
 
   .brand__mark {
