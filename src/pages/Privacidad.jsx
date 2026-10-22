@@ -28,7 +28,8 @@ export default function Privacidad() {
             <h2>1. Responsable del tratamiento</h2>
             <p>
               El responsable del tratamiento de los datos personales es <strong>Sanar en Casa</strong>,
-              droguería y servicio de cuidado domiciliario con domicilio en Bogotá D.C., Colombia.
+              servicio de enfermería domiciliaria y/o hospitalaria con domicilio en Bogotá D.C.,
+              Colombia.
               Para asuntos relacionados con esta política puedes escribir a{' '}
               <a href={`mailto:${contact.email}`}>{contact.email}</a> o llamar al{' '}
               <a href={contact.phoneHref}>{contact.phone}</a>.
@@ -51,7 +52,7 @@ export default function Privacidad() {
 
             <h2>3. Finalidades del tratamiento</h2>
             <ul>
-              <li>Coordinar, prestar y hacer seguimiento a los servicios de cuidado domiciliario.</li>
+              <li>Coordinar, prestar y hacer seguimiento a los servicios de enfermería domiciliaria.</li>
               <li>Comunicarnos contigo o con la familia del paciente para gestionar la atención.</li>
               <li>Atender peticiones, quejas, reclamos, sugerencias y solicitudes de información.</li>
               <li>Gestionar procesos de selección de talento humano.</li>

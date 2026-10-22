@@ -3,7 +3,6 @@ import {
   FaClipboardCheck,
   FaComments,
   FaHandHoldingHeart,
-  FaPills,
   FaShieldHeart,
 } from 'react-icons/fa6'
 import PageHero from '../components/PageHero.jsx'
@@ -56,10 +55,11 @@ export default function Servicios() {
       <section className="section">
         <div className="container">
           <Reveal className="notice">
-            <FaPills aria-hidden="true" />
+            <FaClipboardCheck aria-hidden="true" />
             <p>
-              Además del cuidado en casa, somos una droguería en Bogotá. Si necesitas apoyo con tus
-              medicamentos, escríbenos y te orientamos sobre cómo acercarte a nuestro servicio.
+              Además del cuidado en casa, brindamos enfermería domiciliaria y/o hospitalaria en
+              Bogotá y sus alrededores. Escríbenos y diseñamos juntos un plan de cuidado según lo que
+              necesites.
             </p>
           </Reveal>
 

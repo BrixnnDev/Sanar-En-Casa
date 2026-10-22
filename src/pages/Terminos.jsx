@@ -17,7 +17,7 @@ export default function Terminos() {
       <PageHero
         eyebrow="Términos y condiciones"
         title="Condiciones de uso y contratación del servicio"
-        text="Al navegar este sitio y al contratar nuestros servicios aceptas las condiciones que\Entityamos a continuación."
+        text="Al navegar este sitio y al contratar nuestros servicios aceptas las condiciones que enumeramos a continuación."
       />
 
       <section className="section">
@@ -35,9 +35,9 @@ export default function Terminos() {
 
             <h2>2. Objeto del sitio</h2>
             <p>
-              Este sitio web tiene fines informativos: presenta los servicios de cuidado domiciliario
-              que ofrecemos, nuestro equipo de trabajo y los canales de atención. La información
-              publicada no sustituye la valoración clínica ni el diagnóstico profesional.
+              Este sitio web tiene fines informativos: presenta los servicios de enfermería
+              domiciliaria que ofrecemos, nuestro equipo de trabajo y los canales de atención. La
+              información publicada no sustituye la valoración clínica ni el diagnóstico profesional.
             </p>
 
             <h2>3. Contratación del servicio</h2>
@@ -58,15 +58,15 @@ export default function Terminos() {
 
             <h2>4. Alcance de la atención</h2>
             <p>
-              nuestro equipo realiza cuidados básicos de enfermería, acompañamiento en actividades
+              Nuestro equipo realiza cuidados básicos de enfermería, acompañamiento en actividades
               diarias, movilización, higiene, control y registro de signos vitales, y demás
               actividades pactadas. Los procedimientos se ejecutan con técnica, asepsia y
               responsabilidad del paciente.
             </p>
             <p>
               La atención domiciliaria <strong>no reemplaza</strong> la consulta médica, la hospitalización
-              ni los tratamientos especializados de mayor complejidad. Ante una urgencia aktivamos la línea de
-              emergencias y contactamos de inmediato a la familia.
+              ni los tratamientos especializados de mayor complejidad. Ante una urgencia activamos la
+              línea de emergencias y contactamos de inmediato a la familia.
             </p>
 
             <h2>5. Responsabilidades de la familia</h2>

@@ -6,7 +6,6 @@ import {
   FaHandHoldingHeart,
   FaHouseMedical,
   FaLocationDot,
-  FaPills,
   FaUserNurse,
 } from 'react-icons/fa6'
 import PageHero from '../components/PageHero.jsx'
@@ -23,9 +22,9 @@ const essence = [
     text: 'Atención en el entorno donde el paciente se siente seguro.',
   },
   {
-    icon: FaPills,
-    title: 'Droguería en Bogotá',
-    text: 'Un espacio cercano para acompañar también tu salud.',
+    icon: FaUserNurse,
+    title: 'Enfermería básica',
+    text: 'Cuidados con técnica, higiene y responsabilidad en cada visita.',
   },
   {
     icon: FaLocationDot,
@@ -58,9 +57,10 @@ export default function Nosotros() {
               Cuidado que se siente <span className="text-verde">como en casa</span>
             </h2>
             <p className="section-sub">
-              Somos una droguería bogotana que complementa su servicio con cuidado y acompañamiento
-              domiciliario. Trabajamos con pacientes que necesitan apoyo en sus actividades diarias,
-              movilización, control de signos vitales y cuidados básicos de enfermería.
+              Somos un equipo bogotano de enfermería domiciliaria y/o hospitalaria que acompaña a
+              pacientes y familias en su propio hogar. Trabajamos con personas que necesitan apoyo en
+              sus actividades diarias, movilización, control de signos vitales y cuidados básicos de
+              enfermería.
             </p>
             <p className="section-sub">
               Nuestra labor no termina en el paciente: acompañamos también a la familia, escuchamos

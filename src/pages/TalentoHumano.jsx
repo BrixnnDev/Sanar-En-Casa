@@ -55,7 +55,7 @@ export default function TalentoHumano() {
   useSeo({
     title: 'Talento humano',
     description:
-      'Trabaja con nosotros en enfermería y cuidado domiciliario en Bogotá. Buscamos personas con experiencia, vocación y compromiso con el paciente.',
+      'Trabaja con nosotros en enfermería domiciliaria en Bogotá. Buscamos personas con experiencia, vocación y compromiso con el paciente.',
     path: '/talento-humano',
   })
 
@@ -76,7 +76,7 @@ export default function TalentoHumano() {
             </h2>
             <p className="section-sub">
               En Sanar en Casa creemos que el cuidado de calidad empieza por las personas que lo
-              brindan. Si tienes experiencia en cuidado domiciliario, formación en salud y una
+              brindan. Si tienes experiencia en enfermería domiciliaria, formación en salud y una
               verdadera vocación de servicio, queremos conocerte.
             </p>
             <p className="section-sub">
