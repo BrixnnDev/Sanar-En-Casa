@@ -4,6 +4,7 @@ import {
   FaBedPulse,
   FaCheck,
   FaComments,
+  FaCompass,
   FaHeartPulse,
   FaHouseMedical,
   FaLeaf,
@@ -14,9 +15,11 @@ import {
 import Reveal from '../components/Reveal.jsx'
 import SectionHead from '../components/SectionHead.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
+import Testimonials from '../components/Testimonials.jsx'
+import RatingStars from '../components/RatingStars.jsx'
 import CtaBand from '../components/CtaBand.jsx'
 import useSeo from '../hooks/useSeo.js'
-import { contact, services, steps } from '../data/site.js'
+import { contact, mission, rating, services, steps, vision } from '../data/site.js'
 
 const heroChips = [
   'Atención en Bogotá',
@@ -135,6 +138,14 @@ export default function Inicio() {
                   </li>
                 ))}
               </ul>
+            </Reveal>
+            <Reveal delay={0.4}>
+              <a className="hero__rating" href="#testimonios">
+                <RatingStars value={rating.value} size={1.05} />
+                <span>
+                  <strong>{rating.value.toFixed(1)}/5</strong> · {rating.count}+ clientes satisfechos
+                </span>
+              </a>
             </Reveal>
           </div>
 
@@ -306,6 +317,34 @@ export default function Inicio() {
           </div>
         </div>
       </section>
+
+      <section className="section section--soft">
+        <div className="container">
+          <SectionHead
+            eyebrow="Nuestro propósito"
+            title="Misión y visión"
+            text="La razón por la que hacemos lo que hacemos y el camino que queremos recorrer."
+          />
+          <div className="grid grid--2">
+            <Reveal className="card purpose-card">
+              <span className="icon-badge">
+                <FaUserNurse aria-hidden="true" />
+              </span>
+              <h3>{mission.title}</h3>
+              <p>{mission.text}</p>
+            </Reveal>
+            <Reveal delay={0.1} className="card purpose-card">
+              <span className="icon-badge icon-badge--gold">
+                <FaCompass aria-hidden="true" />
+              </span>
+              <h3>{vision.title}</h3>
+              <p>{vision.text}</p>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <Testimonials />
 
       <section className="section section--azul">
         <div className="container">

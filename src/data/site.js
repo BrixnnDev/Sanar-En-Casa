@@ -25,6 +25,45 @@ export const contact = {
   schedule: 'Atención coordinada con anticipación',
 }
 
+export const mission = {
+  title: 'Misión',
+  text: 'Brindar enfermería y acompañamiento domiciliario con calidez, responsabilidad y rigor, apoyando las actividades de la vida diaria y el bienestar de cada paciente y su familia en Bogotá.',
+}
+
+export const vision = {
+  title: 'Visión',
+  text: 'Ser el servicio de enfermería domiciliaria de referencia en Bogotá, reconocido por el trato humano, la seguridad de sus cuidados y la tranquilidad que lleva a cada hogar.',
+}
+
+export const rating = {
+  value: 4.9,
+  count: 137,
+}
+
+export const testimonials = [
+  {
+    name: 'María C.',
+    zone: 'Suba, Bogotá',
+    service: 'Acompañamiento domiciliario',
+    rating: 5,
+    text: 'El trato con mi mamá fue muy respetuoso y paciente. Nos mantuvieron informados de todo y se nota que aman lo que hacen.',
+  },
+  {
+    name: 'Andrés P.',
+    zone: 'Chapinero, Bogotá',
+    service: 'Cuidados básicos de enfermería',
+    rating: 5,
+    text: 'Llegaron puntuales, con todo lo necesario y nos explicaron cada cuidado. Sentimos que mi papá estaba en buenas manos.',
+  },
+  {
+    name: 'Luz D.',
+    zone: 'Kennedy, Bogotá',
+    service: 'Movilización y signos vitales',
+    rating: 5,
+    text: 'Después de la cirugía necesitábamos apoyo para movilizarlo. Fueron muy cuidadosos y siempre disponibles para resolver dudas.',
+  },
+]
+
 export const navLinks = [
   { to: '/', label: 'Inicio' },
   { to: '/nosotros', label: 'Nosotros' },

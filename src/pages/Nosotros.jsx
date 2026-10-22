@@ -14,7 +14,7 @@ import Reveal from '../components/Reveal.jsx'
 import SectionHead from '../components/SectionHead.jsx'
 import CtaBand from '../components/CtaBand.jsx'
 import useSeo from '../hooks/useSeo.js'
-import { values } from '../data/site.js'
+import { mission, values, vision } from '../data/site.js'
 
 const essence = [
   {
@@ -133,22 +133,14 @@ export default function Nosotros() {
                 <FaUserNurse aria-hidden="true" />
               </span>
               <h3>Misión</h3>
-              <p>
-                Brindar cuidado y acompañamiento domiciliario con calidez y responsabilidad,
-                apoyando las actividades de la vida diaria y el bienestar de cada paciente y su
-                familia en Bogotá.
-              </p>
+              <p>{mission.text}</p>
             </Reveal>
             <Reveal delay={0.1} className="card purpose-card">
               <span className="icon-badge icon-badge--gold">
                 <FaCompass aria-hidden="true" />
               </span>
               <h3>Visión</h3>
-              <p>
-                Ser un referente de confianza en Bogotá en cuidado domiciliario y atención
-                farmacéutica cercana, reconocidos por nuestro trato humano, nuestra responsabilidad
-                y la tranquilidad que llevamos a cada hogar.
-              </p>
+              <p>{vision.text}</p>
             </Reveal>
           </div>
         </div>
