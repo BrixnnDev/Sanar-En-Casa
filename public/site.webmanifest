@@ -1,0 +1,31 @@
+{
+  "name": "Sanar en Casa | Enfermería domiciliaria en Bogotá",
+  "short_name": "Sanar en Casa",
+  "description": "Enfermería domiciliaria y/o hospitalaria en Bogotá. Acompañamiento en el hogar, movilización, signos vitales y cuidados básicos de enfermería.",
+  "lang": "es-CO",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#63BE81",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

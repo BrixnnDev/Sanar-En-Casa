@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { contact } from '../data/site.js'
 
 export default function Privacidad() {
+  useSeo({
+    title: 'Política de privacidad',
+    description:
+      'Conoce cómo tratamos tus datos personales en Sanar en Casa conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 en Colombia.',
+    path: '/privacidad',
+  })
+
   return (
     <>
       <PageHero

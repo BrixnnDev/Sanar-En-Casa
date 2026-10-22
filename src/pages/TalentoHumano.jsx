@@ -12,6 +12,7 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import SectionHead from '../components/SectionHead.jsx'
 import CtaBand from '../components/CtaBand.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { contact } from '../data/site.js'
 
 const benefits = [
@@ -51,6 +52,13 @@ const mailto = `mailto:${contact.email}?subject=${encodeURIComponent(
 )}`
 
 export default function TalentoHumano() {
+  useSeo({
+    title: 'Talento humano',
+    description:
+      'Trabaja con nosotros en enfermería y cuidado domiciliario en Bogotá. Buscamos personas con experiencia, vocación y compromiso con el paciente.',
+    path: '/talento-humano',
+  })
+
   return (
     <>
       <PageHero

@@ -11,6 +11,7 @@ import {
 } from 'react-icons/fa6'
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { contact } from '../data/site.js'
 
 const initialForm = {
@@ -25,6 +26,13 @@ const initialForm = {
 export default function Pqr() {
   const [form, setForm] = useState(initialForm)
   const [sent, setSent] = useState(false)
+
+  useSeo({
+    title: 'PQR',
+    description:
+      'Envía tu petición, queja, reclamo o sugerencia a Sanar en Casa. Te respondemos con responsabilidad y en los plazos que establece la ley.',
+    path: '/pqr',
+  })
 
   const update = (field) => (event) => {
     setForm((current) => ({ ...current, [field]: event.target.value }))

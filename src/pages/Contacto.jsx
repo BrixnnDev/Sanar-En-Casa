@@ -11,6 +11,7 @@ import {
 } from 'react-icons/fa6'
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { contact } from '../data/site.js'
 
 const initialForm = {
@@ -23,6 +24,13 @@ const initialForm = {
 export default function Contacto() {
   const [form, setForm] = useState(initialForm)
   const [sent, setSent] = useState(false)
+
+  useSeo({
+    title: 'Contacto',
+    description:
+      'Escríbenos o llámanos al +57 300 189 4746. Coordinamos atención de enfermería domiciliaria y hospitalaria en Bogotá y sus alrededores.',
+    path: '/contacto',
+  })
 
   const update = (field) => (event) => {
     setForm((current) => ({ ...current, [field]: event.target.value }))

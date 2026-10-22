@@ -15,6 +15,7 @@ import Reveal from '../components/Reveal.jsx'
 import SectionHead from '../components/SectionHead.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
 import CtaBand from '../components/CtaBand.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { contact, services, steps } from '../data/site.js'
 
 const heroChips = [
@@ -70,6 +71,13 @@ const commitments = [
 ]
 
 export default function Inicio() {
+  useSeo({
+    title: '',
+    description:
+      'Sanar en Casa es un servicio de enfermería domiciliaria en Bogotá. Acompañamiento en el hogar, apoyo en actividades diarias, movilización, signos vitales y cuidados básicos de enfermería.',
+    path: '/',
+  })
+
   return (
     <>
       <section className="hero">

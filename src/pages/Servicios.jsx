@@ -11,6 +11,7 @@ import Reveal from '../components/Reveal.jsx'
 import SectionHead from '../components/SectionHead.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
 import CtaBand from '../components/CtaBand.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { services } from '../data/site.js'
 
 const included = [
@@ -37,6 +38,13 @@ const included = [
 ]
 
 export default function Servicios() {
+  useSeo({
+    title: 'Servicios de enfermería domiciliaria',
+    description:
+      'Cuidado y acompañamiento domiciliario en Bogotá: apoyo en actividades diarias, movilización, cambio de posición, control de signos vitales y cuidados básicos de enfermería.',
+    path: '/servicios',
+  })
+
   return (
     <>
       <PageHero

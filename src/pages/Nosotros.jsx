@@ -13,6 +13,7 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import SectionHead from '../components/SectionHead.jsx'
 import CtaBand from '../components/CtaBand.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { values } from '../data/site.js'
 
 const essence = [
@@ -34,6 +35,13 @@ const essence = [
 ]
 
 export default function Nosotros() {
+  useSeo({
+    title: 'Nosotros',
+    description:
+      'Conoce Sanar en Casa, servicio de enfermería domiciliaria en Bogotá: quiénes somos, nuestra misión, visión y los valores con los que cuidamos a cada familia.',
+    path: '/nosotros',
+  })
+
   return (
     <>
       <PageHero

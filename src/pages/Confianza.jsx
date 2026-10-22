@@ -14,6 +14,7 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import SectionHead from '../components/SectionHead.jsx'
 import CtaBand from '../components/CtaBand.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { faqs } from '../data/site.js'
 
 const pillars = [
@@ -66,6 +67,13 @@ const standards = [
 
 export default function Confianza() {
   const [openFaq, setOpenFaq] = useState(0)
+
+  useSeo({
+    title: 'Confianza y seguridad',
+    description:
+      'Personal verificado, protocolos de higiene, confidencialidad y comunicación constante: las garantías de nuestro servicio de enfermería domiciliaria en Bogotá.',
+    path: '/confianza',
+  })
 
   return (
     <>

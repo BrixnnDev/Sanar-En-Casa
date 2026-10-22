@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
+import useSeo from '../hooks/useSeo.js'
 import { contact } from '../data/site.js'
 
 export default function Terminos() {
+  useSeo({
+    title: 'Términos y condiciones',
+    description:
+      'Condiciones de uso del sitio y de contratación de los servicios de enfermería domiciliaria de Sanar en Casa en Bogotá.',
+    path: '/terminos',
+  })
+
   return (
     <>
       <PageHero

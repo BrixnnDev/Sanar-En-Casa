@@ -7,6 +7,14 @@ import {
   FaUserNurse,
 } from 'react-icons/fa6'
 
+export const site = {
+  url: 'https://sanarencasa.vercel.app',
+  name: 'Sanar en Casa',
+  title: 'Sanar en Casa | Enfermería domiciliaria en Bogotá',
+  description:
+    'Sanar en Casa es un servicio de enfermería domiciliaria en Bogotá. Acompañamiento, apoyo en actividades diarias, signos vitales y cuidados básicos de enfermería.',
+}
+
 export const contact = {
   phone: '+57 300 189 4746',
   phoneHref: 'tel:+573001894746',
