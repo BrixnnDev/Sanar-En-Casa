@@ -1,14 +1,21 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FaBars, FaChevronRight, FaWhatsapp, FaXmark } from 'react-icons/fa6'
+import { FaBars, FaCalendarCheck, FaChevronRight, FaWhatsapp, FaXmark } from 'react-icons/fa6'
 import Logo from './Logo.jsx'
+import CitaModal from './CitaModal.jsx'
 import { contact, navLinks } from '../data/site.js'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [citaOpen, setCitaOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const { pathname } = useLocation()
+
+  const openCita = () => {
+    setOpen(false)
+    setCitaOpen(true)
+  }
 
   useEffect(() => {
     setOpen(false)
@@ -47,14 +54,24 @@ export default function Header() {
         </nav>
 
         <div className="header__actions">
+          <button
+            type="button"
+            className="btn btn--primary btn--sm header__cita"
+            onClick={openCita}
+            aria-haspopup="dialog"
+            title="Agendar cita"
+          >
+            <FaCalendarCheck aria-hidden="true" />
+            <span>Agendar cita</span>
+          </button>
           <a
             href={contact.whatsapp}
             target="_blank"
             rel="noreferrer"
-            className="btn btn--primary btn--sm header__cta"
+            className="btn btn--ghost btn--sm header__cta"
           >
             <FaWhatsapp aria-hidden="true" />
-            WhatsApp
+            <span>WhatsApp</span>
           </a>
           <button
             type="button"
@@ -94,11 +111,20 @@ export default function Header() {
                 </NavLink>
               ))}
             </nav>
+            <button
+              type="button"
+              className="btn btn--primary btn--block"
+              onClick={openCita}
+              aria-haspopup="dialog"
+            >
+              <FaCalendarCheck aria-hidden="true" />
+              Agendar cita
+            </button>
             <a
               href={contact.whatsapp}
               target="_blank"
               rel="noreferrer"
-              className="btn btn--primary btn--block"
+              className="btn btn--ghost btn--block"
             >
               <FaWhatsapp aria-hidden="true" />
               Escríbenos por WhatsApp
@@ -106,6 +132,8 @@ export default function Header() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <CitaModal open={citaOpen} onClose={() => setCitaOpen(false)} />
     </header>
   )
 }

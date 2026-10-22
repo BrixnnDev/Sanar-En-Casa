@@ -2074,6 +2074,196 @@ button {
   color: var(--tinta-suave);
 }
 
+.header__cita,
+.header__cta {
+  flex-shrink: 0;
+}
+
+.cita-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  overflow-y: auto;
+  background: rgba(18, 36, 27, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.cita {
+  position: relative;
+  width: min(620px, 100%);
+  max-height: calc(100vh - 2.5rem);
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 24px;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  box-shadow: 0 30px 80px rgba(18, 36, 27, 0.32);
+}
+
+.cita__close {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--borde);
+  background: #fff;
+  color: var(--tinta-suave);
+  font-size: 1.1rem;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cita__close:hover {
+  color: var(--verde-800);
+  background: var(--verde-50);
+  border-color: var(--verde-200);
+}
+
+.cita__head {
+  padding-right: 2.4rem;
+}
+
+.cita__head .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cita__head h2 {
+  margin-top: 0.8rem;
+  font-size: clamp(1.3rem, 2.6vw, 1.65rem);
+  letter-spacing: -0.02em;
+}
+
+.cita__head p {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  color: var(--tinta-suave);
+}
+
+.cita__form {
+  margin-top: 1.5rem;
+}
+
+.cita__form .form-grid {
+  gap: 0.9rem;
+}
+
+.cita__form .field textarea {
+  min-height: 96px;
+}
+
+.cita__form .checkbox {
+  margin-top: 1rem;
+}
+
+.cita__form .btn--block {
+  margin-top: 1.1rem;
+}
+
+.cita__form .form-note {
+  margin-top: 0.8rem;
+}
+
+.cita__success {
+  padding: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+.cita__success-icon {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: var(--verde-100);
+  color: var(--verde-700);
+  font-size: 1.9rem;
+}
+
+.cita__success h2 {
+  font-size: 1.5rem;
+}
+
+.cita__success p {
+  max-width: 34rem;
+  margin: 0.7rem auto 0;
+  font-size: 0.95rem;
+  color: var(--tinta-suave);
+}
+
+.cita__success-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.cita__success-note {
+  font-size: 0.82rem;
+}
+
+.cita__success-note a {
+  color: var(--verde-700);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 1280px) {
+  .header__cta {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 999px;
+  }
+
+  .header__cta span {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .header__cita {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 999px;
+  }
+
+  .header__cita span {
+    display: none;
+  }
+
+  .cita-overlay {
+    align-items: flex-end;
+    padding: 0.75rem;
+  }
+
+  .cita {
+    max-height: calc(100vh - 1.5rem);
+    border-radius: 22px;
+  }
+
+  .cita .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cita__head h2 {
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 1120px) {
   .nav {
     display: none;
