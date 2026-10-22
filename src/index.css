@@ -2074,7 +2074,6 @@ button {
   color: var(--tinta-suave);
 }
 
-.header__cita,
 .header__cta {
   flex-shrink: 0;
 }
@@ -2234,17 +2233,6 @@ button {
 }
 
 @media (max-width: 680px) {
-  .header__cita {
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    border-radius: 999px;
-  }
-
-  .header__cita span {
-    display: none;
-  }
-
   .cita-overlay {
     align-items: flex-end;
     padding: 0.75rem;
@@ -2271,10 +2259,6 @@ button {
 
   .nav-toggle {
     display: inline-flex;
-  }
-
-  .header__cta {
-    display: none;
   }
 
   .mobile-nav {

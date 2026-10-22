@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FaBars, FaCalendarCheck, FaChevronRight, FaWhatsapp, FaXmark } from 'react-icons/fa6'
+import { FaBars, FaChevronRight, FaWhatsapp, FaXmark } from 'react-icons/fa6'
 import Logo from './Logo.jsx'
 import CitaModal from './CitaModal.jsx'
-import { contact, navLinks } from '../data/site.js'
+import { navLinks } from '../data/site.js'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -16,6 +16,8 @@ export default function Header() {
     setOpen(false)
     setCitaOpen(true)
   }
+
+  const closeCita = useCallback(() => setCitaOpen(false), [])
 
   useEffect(() => {
     setOpen(false)
@@ -29,11 +31,12 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
+    if (citaOpen) return undefined
     document.body.style.overflow = open ? 'hidden' : ''
     return () => {
       document.body.style.overflow = ''
     }
-  }, [open])
+  }, [open, citaOpen])
 
   return (
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
@@ -56,23 +59,14 @@ export default function Header() {
         <div className="header__actions">
           <button
             type="button"
-            className="btn btn--primary btn--sm header__cita"
+            className="btn btn--primary btn--sm header__cta"
             onClick={openCita}
             aria-haspopup="dialog"
-            title="Agendar cita"
-          >
-            <FaCalendarCheck aria-hidden="true" />
-            <span>Agendar cita</span>
-          </button>
-          <a
-            href={contact.whatsapp}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn--ghost btn--sm header__cta"
+            title="Escríbenos por WhatsApp"
           >
             <FaWhatsapp aria-hidden="true" />
             <span>WhatsApp</span>
-          </a>
+          </button>
           <button
             type="button"
             className="nav-toggle"
@@ -117,23 +111,14 @@ export default function Header() {
               onClick={openCita}
               aria-haspopup="dialog"
             >
-              <FaCalendarCheck aria-hidden="true" />
-              Agendar cita
-            </button>
-            <a
-              href={contact.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn--ghost btn--block"
-            >
               <FaWhatsapp aria-hidden="true" />
               Escríbenos por WhatsApp
-            </a>
+            </button>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <CitaModal open={citaOpen} onClose={() => setCitaOpen(false)} />
+      <CitaModal open={citaOpen} onClose={closeCita} />
     </header>
   )
 }
